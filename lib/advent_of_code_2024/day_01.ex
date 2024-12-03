@@ -1,4 +1,6 @@
 defmodule AdventOfCode2024.Day01 do
+  import AdventOfCode2024.Utils
+
   def part1() do
     [list1, list2] =
       File.open("lib/advent_of_code_2024/day_01_input.txt")
@@ -31,13 +33,5 @@ defmodule AdventOfCode2024.Day01 do
     list1
     |> Enum.map(fn x -> x * (freq[x] || 0) end)
     |> Enum.sum()
-  end
-
-  def read_from_file({:ok, file}) do
-    IO.read(file, :eof)
-  end
-
-  def read_from_file({_, error}) do
-    IO.puts("Error: #{:file.format_error(error)}")
   end
 end
