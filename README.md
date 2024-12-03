@@ -1,21 +1,10 @@
-# AdventOfCode2024
+# Advent Of Code 2024 Solutions
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `advent_of_code_2024` to your list of dependencies in `mix.exs`:
+```bash
+iex -S mix
+```
+then: 
 
 ```elixir
-def deps do
-  [
-    {:advent_of_code_2024, "~> 0.1.0"}
-  ]
-end
+iex(1)> AdventOfCode2024.Day03.part2()
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/advent_of_code_2024>.
-
